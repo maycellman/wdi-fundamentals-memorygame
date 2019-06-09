@@ -52,6 +52,17 @@ main{
 	width: 850px;
 	margin: 35px auto;
 }
+button{
+	float: left;
+	padding: 15px;
+	background:#00a6b3;
+	margin: 4px 2px;
+	color: white;
+}
+button:hover{
+	background:#F15B31;
+
+}
 img{
 	margin: 40px 8px 0 8px;
 }

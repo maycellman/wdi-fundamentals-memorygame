@@ -28,9 +28,8 @@ function checkForMatch(){
 	} else {
 		alert("Sorry, try again");
 	}	
-	cardsInPlay.pop();
-	cardsInPlay.pop();
-		
+
+
 }
 
 function flipCard(){
@@ -53,5 +52,13 @@ function createBoard(){
 		document.getElementById('game-board').appendChild(cardElement);
 	}
 }
+function reset(){
+	cardsInPlay=[];
+	var cardsDisplay = document.getElementsByTagName('img')
+	for(i=0; i<cardsDisplay.length; i++){
+		cardsDisplay[i].setAttribute('src','images/back.png');
+	}
+}
 createBoard();
+document.getElementById('reset').addEventListener('click',reset);
 
